@@ -1,8 +1,10 @@
 import numpy as np
 from scipy.optimize import minimize
-def fun(a,b,x):
+def fun(a,b):
     v=lambda x:(x-a)*(x-b)
     return v
+#这样写的好处是方便修改函数的参数
+
 #这里说明一下minimize中的参数的设置
 #（1）func:要优化的函数需要返回一个scala
 #（2）x0:变量的初始猜测值
