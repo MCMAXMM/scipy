@@ -14,6 +14,7 @@ def fun(a,b,x):
 #contrains:等式约束或者不等式约束，eq:说明是等式约束，等于0，ineq:不等式约束，必须非负
 #bounds:变量的限制范围
 res=minimize(fun(4,1),np.array(2),method="SLSQP")
+#minimize(中的第一个参数是一个函数)
 print(res.fun)
 print(res.success)
 print(res.x)
